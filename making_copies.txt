@@ -1,0 +1,60 @@
+#copy
+#deepcopy
+
+#import, from
+
+#pacjakes:
+  multiple files with multiple function
+  some of them are shared. main functionality
+
+package_name/
+    __init__.py #can be an empty file.
+    python_file.py #Animal
+    sub_package_name/
+      __init__.py
+      python_file.py
+
+from package_name.python_file import Animal
+
+from package_name.sub_package_name.python_file import Other_animal
+
+
+OOPS:
+  Object oriented programing
+  ->inheritance : ability build something and add to to it in the child classes
+  ->abstraction : ability to manage the scope of the attributes and methods in your class.
+  ->encapsulation : encapsulates the content and methods of the instance(object) into one single entity
+  ->polymorphism: operator over loading is an example. add gets called when  + is used.
+  -> overloading and overriding:
+          overloading :
+
+                        def add(*args):
+                            if len(args) == 2:
+                              pass
+                            else:
+                              pass
+          overriding: def eat(self):
+                          self.hunt()
+                          selt.ate = True
+                          self.hungry = False
+
+scopes:
+    everything is public.
+    #name mangling.
+    def __my_private_method():
+    __private_var = []
+    conventsion _private_method _private_var
+
+    
+
+syntax:
+
+
+class Animal(parentClass):
+    """doc strings will be available as __doc__"""
+
+class Animal:
+
+class Animal(Object): #starting with python 3.0 this is not required
+
+"self" this is equvivalent to "this" keyword in some languages.

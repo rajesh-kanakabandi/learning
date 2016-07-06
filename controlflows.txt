@@ -1,0 +1,70 @@
+control flows:
+
+control statments:
+
+  if else
+  conditionals
+
+if i==0:
+  print("Zero")
+elif i>0:
+  print("Positive")
+else:
+  print("Negative")
+
+names = ['asdf','asdfs']
+
+if True/False:
+names =[]
+names[0]
+
+0-> False
+if len(names):
+  print(names[0])
+
+[],{},() ->False
+Person p
+None -> False
+if dict1.has_key('name'):
+dict1.get('name',[])
+if names:
+  print(name[0])
+
+  False:
+    0,'',None,[],{},()
+
+
+while:
+
+while i>0:
+    print(i)
+    i= i-1
+else:
+    print("loop terminated")
+
+
+for:
+item in iterable
+for i in range(10):
+    print(i)
+else:
+    print("Loop terminated")
+
+
+break->  stops iteration and exists the loop. continues to the next line after the loop
+continue -> stops the current iteration and continues to the next iteration
+
+
+***********
+ *********
+  *******
+   *****
+    ***
+     *
+
+find the largest number in 0 - 200 that is divisible by 3 and 5
+
+generate a dictionary that contains i: i*i as its key abd values for 0-n when n is  a given number
+gen_dict(n):
+
+output : dictionary: {0:0,1;1,2:4}

@@ -1,0 +1,71 @@
+data types:
+
+numbers
+	int
+	long
+	float
+	double
+
+char
+
+string
+
+data structure:
+	a data structure is an entity which is build of one or more primitive data types in a specific order/hierarchy.
+	it helps solve a problem efficiently by folowing a specific protocol to add, remove and access its contents.
+
+basic data structures:
+array(list):
+	[1,2,3.0,"hello"]
+	ordered - the order in which the items are appended will persist.
+	dupes - OK
+	operations:
+		insert
+		append
+		remove
+		iterate:
+
+set:
+	{1,2,3,"Hello"}
+	unordered - order is not gauranteed
+	dupes - NOK
+	operations:
+		add
+		remove
+		iterate
+
+tupple:
+		(1,2,3)
+		ordered
+		#point = (x,y)
+		iterable
+a = ((1,2), (2,3))
+a[0][0]
+
+
+dictionary:
+	{"name": "John", "age": 27}
+	unordered
+	dupes - NOK
+	oreations:
+		insert
+		remove
+		iterate
+
+[{'name':'asf','id':1,'type':'corp'},{},{}]
+
+
+
+complex data structures:
+
+linked list
+
+doublely linked list
+
+queue
+
+deQueue
+
+tree
+
+BTree

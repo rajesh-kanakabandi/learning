@@ -1,0 +1,16 @@
+I/O:
+command line:
+print()
+input()
+
+Files:
+ open() --> opens a file. in different modes 'r','w'...
+ filestream --> iteration will give you line after line
+
+ with keyword helps to close the file once the proessing is done.
+
+ read(), readLine, ... functions to perform read operation.
+ write, writeLine, ... functions to perform write operation.
+
+
+ csv library makes it easier to read and write delimited files.

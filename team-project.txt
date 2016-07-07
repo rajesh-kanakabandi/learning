@@ -1,0 +1,27 @@
+project:
+
+use:
+  Automobile,
+  car,
+  truck
+
+develop a project to track and manage the fleet of automobiles.
+
+run.py
+
+use an infinite loop to keep the app running and input() to get the user input
+display the number of cars available
+trucks available
+total number of trucks and cars.
+number of cars in service
+number of trucks in service.
+
+1. rent another car
+2. return a car
+3. return a truck
+4. service a truck
+5. service a car
+6. add new car
+7. add new truck
+
+Fleet class - list of cars and list of trucks

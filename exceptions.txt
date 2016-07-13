@@ -1,0 +1,25 @@
+
+
+runtime errors will cause an application to crash.
+it is inevitable to control bad data.
+
+solution is exception handling.
+
+what do we do?
+    look out for situations where there is a chance for a runtime error.
+    encapsulate that code in a try block. and catch using the appropriate Exception.
+
+what to do when an exception is caught?
+    log the relavent data for debugging purposes.
+    then implement a fall back mechanism.
+
+
+try:
+    xyz
+    sdfs
+    sdf
+except:
+    log.("something went wrong")
+    do something else
+
+as:

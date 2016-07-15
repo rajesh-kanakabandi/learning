@@ -9,16 +9,17 @@ users.append({"name": "priyanka", "type": "user", 'password': 'priyanka'})
 def home():
     return render_template('login.pt')
 
-@app.route("/login", methods=["POST"])
+@app.route("/login", methods=["GET", "POST"])
 def login():
-    uname = request.form['uname']
-    password = request.form['password']
-    for user in users:
-        if user['name'] == uname and user['password'] == password:
-            return "Welcome {}".format(uname)
+    if request.method == 'POST':
+        uname = request.form['uname']
+        password = request.form['password']
+        for user in users:
+            if user['name'] == uname and user['password'] == password:
+                return "Welcome {}".format(uname)
 
-    return "Invalid user."
-
+        return "Invalid user."
+    return render_template('login.pt')
 @app.route('/users')
 def users_list():
     return render_template('user.pt', users)

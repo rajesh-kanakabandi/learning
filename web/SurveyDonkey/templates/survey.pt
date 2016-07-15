@@ -1,0 +1,56 @@
+{% extends "base_template.pt" %}
+{% block content %}
+<div class="base-template">
+    <div class="panel panel-default">
+    <!-- Default panel contents -->
+    <div class="panel-heading">Survey: {{surveyName}}</div>
+    <div class="panel-body">
+    <p>We appreciate your effort to do this Survey.</p>
+    <p>Please read thru the questions below and select one option for each question.</p>
+    </div>
+    <form action="/view" method="POST">
+    <div class="container center" >
+        {% for question in questions %}
+        <div>
+
+            <div class="row">
+                <div class="col-xs-10 col-sm-2 col-sm-offset-2">
+                    <label class="form-control">Question {{loop.index}}: </label>
+                </div>
+                <div class="col-xs-8 col-sm-5 col-sm-offset-1 text-left">
+                    <p>{{question.questionName}}</p>
+                </div>
+
+            </div>
+
+
+            <div>
+                <div class="row">
+
+                    <div class="col-xs-8 col-sm-5 col-sm-offset-5 text-left" >
+                    {% for option in question.options %}
+                    <div class="radio">
+                        <label><input type="radio" name="{{question.qid}}" value="{{option.oid}}">{{option.optionName}}</label>
+                    </div>
+                    {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+            <br>
+        </div>
+        {% endfor %}
+
+        <div class ="row">
+            <div class="col-xs-10 col-sm-3 col-sm-offset-7">
+                <button  class ="btn btn-success btn-block" {% if preview== True %} disabled {%endif%} type="submit"> Submit</button>
+            </div>
+        </div>
+        <br>
+
+    </div>
+    </form>
+
+</div>
+</div>
+{% endblock %}

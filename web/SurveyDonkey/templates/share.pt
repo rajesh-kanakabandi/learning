@@ -1,0 +1,28 @@
+{% extends "base_template.pt" %}
+{% block content %}
+<div class="base-template">
+    <div class = "row">
+        <div class="col-xs-10 col-sm-6 col-sm-offset-2">
+        <h4>Please enter a list of email addresses:</h4>
+        </div>
+    </div>
+    <form method="post" action="share">
+	<div class = "row">
+
+		<div class="col-xs-10 col-sm-5 col-sm-offset-3">
+             <div class="form-group">
+             <textarea  id = "addresslist" name = "addresslist" class= "form-control input-xs" placeholder="abc@example.com,def@xyz.com"></textarea>
+             <input id ="sid" type="hidden" name="sid" value={{sid}} >
+             </div>
+         </div>
+	</div>
+	<div class = "row">
+		<div class="col-xs-10 col-sm-3 col-sm-offset-4">
+             <div class="form-group">
+             <button id ="share" type="submit" class= "btn btn-large btn-block btn-primary">Share</button>
+             </div>
+         </div>
+	</div>
+	</form>
+</div>
+{% endblock %}

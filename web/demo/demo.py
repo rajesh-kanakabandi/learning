@@ -18,13 +18,11 @@ def login():
             if user['name'] == uname and user['password'] == password:
                 return "Welcome {}".format(uname)
 
-        return "Invalid user."
     return render_template('login.pt')
+
 @app.route('/users')
 def users_list():
-    return render_template('user.pt', users)
-
-
+    return render_template('users.pt', users=users)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,19 @@
+python - standard library
+
+django (fraework, templating engine, ORM)
+
+Flask - jinja + framework
+
+twisted - framework
+tornado - framework
+
+SQLAlchemy ORM
+
+hug - API development
+
+web:
+angularjs
+bootstrap
+angular-material
+backbonejs
+ember

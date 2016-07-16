@@ -1,0 +1,15 @@
+{% extends "base_template.pt" %}
+{% block content %}
+<table>
+    <th>
+        <td>User name</td>
+        <td>User type</td>
+    </th>
+    {% for user in users %}
+        <tr>
+            <td>{{user['name']}}</td>
+            <td>{{user['type']}}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}

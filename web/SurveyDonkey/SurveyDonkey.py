@@ -169,7 +169,7 @@ def share():
 
                     We appreciate your time and effort.
                     --Survey Donkey.""" % (str(sid))
-        #mail.send(msg)
+        mail.send(msg)
 
         return redirect('/surveys')
     else:
